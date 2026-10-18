@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Having fun with grid</title>
+
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: grid;
+            grid-template: 200px 200px / 200px 200px 200px;
+            gap: 5px;
+            background-color: aqua;
+        }
+
+        .green {
+            background-color: rgb(13, 148, 13);
+        }
+
+        .blue {
+            background-color: rgb(30, 144, 219);
+        }
+
+        .white {
+            background-color: rgb(231, 224, 224);
+            grid-row: span 2;
+        }
+
+        .orange {
+            background-color: rgb(255, 123, 0);
+            grid-column: span 2;
+        }
+
+        .item {
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item green"></div>
+        <div class="item blue"></div>
+        <div class="item white"></div>
+        <div class="item orange"></div>
+    </div>
+</body>
+</html>
